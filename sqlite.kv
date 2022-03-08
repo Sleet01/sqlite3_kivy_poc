@@ -1,0 +1,16 @@
+<SqliteAppRoot>:
+    do_scroll_x: False
+    do_scroll_y: True
+
+	EntryLayout:
+        id: main_layout
+		cols: 1
+		padding: 20
+		spacing: 10
+		size_hint_y: None
+		height: self.minimum_height
+        EntryButton:
+            text: app.sqlite_dir
+            on_press: app.load_buttons()
+        EntryButton:
+            text: "2"
